@@ -34,7 +34,7 @@ def plot_nyquist(system):
 
     plt.figure("Nyquist", figsize=(6, 6))
     plt.plot(h.real, h.imag, label="Nyquist", color="purple")
-    plt.plot(h.real, -h.imag, linestyle='--', color="purple", alpha=0.5)  # Parte speculare
+    plt.plot(h.real, -h.imag, linestyle='--', color="purple", alpha=0.5)
     plt.axhline(0, color='black', linewidth=0.8)
     plt.axvline(0, color='black', linewidth=0.8)
     plt.title("Nyquist")
